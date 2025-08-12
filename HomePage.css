@@ -40,7 +40,7 @@
     /* justify-content: space-around; */
 }
 .book{
-    color: white;
+    color: white(175, 84, 84);
     background-color: black;
     border-radius: 5px;
 }
