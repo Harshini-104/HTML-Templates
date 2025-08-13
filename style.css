@@ -39,9 +39,49 @@
     display: flex;
     /* justify-content: space-around; */
 }
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  padding: 8px 12px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 5px 0;
+  min-width: 50px;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 5px 15px;
+  color: black;
+}
+
+.dropdown-menu li a:hover {
+  background: #eee;
+}
 .book{
     color: white(175, 84, 84);
-    background-color: black;
+    background-color: white;
     border-radius: 5px;
 }
 .book:hover{
@@ -55,6 +95,7 @@ img{
 }
 .sec{
     background: url(./image/event-management.jpg);
+    filter: brightness(1.5);
     color: #ffffff;
     height: 550px;
     padding: 100px 20px;
@@ -270,6 +311,7 @@ img{
 
 .imgimg img:hover {
     transform:scale(1.05);
+    transition: 2s;
     cursor: pointer;
 }
 @media (max-width: 768px) {
@@ -336,3 +378,99 @@ img{
     padding: 40px 20px;
     
 }
+
+/* section footer  */
+
+footer{
+    padding: 40px 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.foottext h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.foottext ul{
+    list-style: none;
+
+}
+.foottext ul li{
+    margin-bottom: 10px;
+}
+.foottext ul li:hover{
+    color: #B12C00;
+    cursor: pointer;
+}
+
+.subscribe p.sub{
+    color: #B12C00;
+    margin-top: 15px;
+}
+
+.subscribe form{
+    display: flex;
+
+}
+
+.subscribe input{
+    padding: 10px;    
+    width: 70%;
+    border-radius: 4px 0 0 4px;
+}
+.subscribe button{
+    background-color: #B12C00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+}
+.subscribe button:hover{
+    background-color: #B12C00;
+    cursor: pointer;
+}
+.contactfoot p{
+    margin-bottom: 8px;
+    color: black;
+
+}
+.contactfoot i{
+    margin-right: 8px;
+    color: #B12C00;
+}
+.bottom{
+    width: 1200px;
+    margin-top: 30px;
+    border-top: 1px solid gray;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.bottom p{
+    font-size: 14px;
+
+}
+.icons a{
+    margin: 0 8px;
+    font-size: 18px;
+    transition: color 0.3s;
+
+}
+.icons a:hover{
+    cursor: pointer;
+    color: #B12C00;
+}
+
